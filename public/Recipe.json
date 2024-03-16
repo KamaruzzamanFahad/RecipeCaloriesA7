@@ -5,7 +5,7 @@
         "recipe_name": "Chicken Stir-Fry",
         "short_description": "A delicious and easy-to-make chicken stir-fry with mushrooms and basil.",
         "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaves", "400 g mushroom"],
-        "preparing_time": "30 min",
+        "preparing_time": "30 minutes",
         "calories": "320 calories"
     },
     {
@@ -14,7 +14,7 @@
         "recipe_name": "Vegetable Curry",
         "short_description": "A flavorful vegetable curry packed with spices and coconut milk.",
         "ingredients": ["300 g mixed vegetables", "400 ml coconut milk", "2 tbsp curry powder", "1 onion, diced"],
-        "preparing_time": "45 min",
+        "preparing_time": "45 minutes",
         "calories": "250 calories"
     },
     {
@@ -23,7 +23,7 @@
         "recipe_name": "Spaghetti Carbonara",
         "short_description": "Classic Italian spaghetti carbonara with crispy bacon and creamy sauce.",
         "ingredients": ["300 g spaghetti", "200 g pancetta", "4 eggs", "100 g Parmesan cheese"],
-        "preparing_time": "25 min",
+        "preparing_time": "25 minutes",
         "calories": "480 calories"
     },
     {
@@ -32,7 +32,7 @@
         "recipe_name": "Caprese Salad",
         "short_description": "A refreshing and simple Caprese salad with ripe tomatoes, fresh mozzarella, and basil.",
         "ingredients": ["4 ripe tomatoes", "200 g fresh mozzarella", "Handful of fresh basil leaves", "2 tbsp balsamic glaze"],
-        "preparing_time": "15 min",
+        "preparing_time": "15 minutes",
         "calories": "180 calories"
     },
     {
@@ -41,7 +41,7 @@
         "recipe_name": "Lemon Garlic Shrimp",
         "short_description": "Tender shrimp cooked in a zesty lemon garlic sauce.",
         "ingredients": ["500 g shrimp, peeled and deveined", "4 cloves garlic, minced", "2 lemons, juiced", "2 tbsp butter"],
-        "preparing_time": "20 min",
+        "preparing_time": "20 minutes",
         "calories": "220 calories"
     },
     {
@@ -50,7 +50,7 @@
         "recipe_name": "Quinoa Salad",
         "short_description": "A nutritious and colorful quinoa salad with fresh vegetables and a tangy vinaigrette.",
         "ingredients": ["1 cup quinoa, cooked", "1 bell pepper, diced", "1 cucumber, diced", "Handful of cherry tomatoes, halved"],
-        "preparing_time": "35 min",
+        "preparing_time": "35 minutes",
         "calories": "180 calories"
     }
 ]
