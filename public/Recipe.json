@@ -1,6 +1,6 @@
 [
     {
-        "recipe_image": "images/food1.png",
+        "recipe_image": "images/food1.jpg",
         "recipe_id": "1",
         "recipe_name": "Chicken Stir-Fry",
         "short_description": "A delicious and easy-to-make chicken stir-fry with mushrooms and basil.",
@@ -9,7 +9,7 @@
         "calories": "320 calories"
     },
     {
-        "recipe_image": "images/food1.png",
+        "recipe_image": "images/food2.jpg",
         "recipe_id": "2",
         "recipe_name": "Vegetable Curry",
         "short_description": "A flavorful vegetable curry packed with spices and coconut milk.",
@@ -18,7 +18,7 @@
         "calories": "250 calories"
     },
     {
-        "recipe_image": "images/food1.png",
+        "recipe_image": "images/food3.jpg",
         "recipe_id": "3",
         "recipe_name": "Spaghetti Carbonara",
         "short_description": "Classic Italian spaghetti carbonara with crispy bacon and creamy sauce.",
@@ -27,7 +27,7 @@
         "calories": "480 calories"
     },
     {
-        "recipe_image": "images/food1.png",
+        "recipe_image": "images/food4.jpg",
         "recipe_id": "4",
         "recipe_name": "Caprese Salad",
         "short_description": "A refreshing and simple Caprese salad with ripe tomatoes, fresh mozzarella, and basil.",
@@ -36,7 +36,7 @@
         "calories": "180 calories"
     },
     {
-        "recipe_image": "images/food1.png",
+        "recipe_image": "images/food5.jpg",
         "recipe_id": "5",
         "recipe_name": "Lemon Garlic Shrimp",
         "short_description": "Tender shrimp cooked in a zesty lemon garlic sauce.",
@@ -45,7 +45,7 @@
         "calories": "220 calories"
     },
     {
-        "recipe_image": "images/food1.png",
+        "recipe_image": "images/food6.jpg",
         "recipe_id": "6",
         "recipe_name": "Quinoa Salad",
         "short_description": "A nutritious and colorful quinoa salad with fresh vegetables and a tangy vinaigrette.",

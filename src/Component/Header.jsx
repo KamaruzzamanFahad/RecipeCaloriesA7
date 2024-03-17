@@ -6,7 +6,7 @@ const Header = () => {
             <h1 className="font-extrabold text-[#150B2B] text-2xl">Recipe Calories</h1>
             </div>
              <div>
-             <ul className="flex gap-10 text-[#150b2bc2] text-sm font-[500]">
+             <ul className="dnone sm:flex md:flex lg:flex xl:flex gap-10 text-[#150b2bc2] text-sm font-[500]">
                 <li>Home</li>
                 <li>Recipes</li>
                 <li>About</li>
@@ -14,7 +14,7 @@ const Header = () => {
              </ul>
              </div>
              <div className="flex items-center">
-                <div className="bg-[#150b2b12] flex items-center p-2 rounded-full pl-5">
+                <div className="bg-[#150b2b12] dnone sm:flex md:flex lg:flex xl:flex items-center p-2 rounded-full pl-5">
                 <CiSearch className="text-xl"/>
              <input type="text" placeholder="Search"  className="bg-transparent ml-2 outline-none"/>
                 </div>
