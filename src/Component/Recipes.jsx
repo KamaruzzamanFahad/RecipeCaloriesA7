@@ -11,6 +11,8 @@ const Recipes = () => {
     const [recipe, setrecipe] = useState([])
     const [coocklist, setcoocklist] = useState([])
     const [preparing, setPreparing] = useState([])
+    const [totaltime, settotaltime] = useState(0)
+    const [totalcal, settotalcal] = useState(0)
 
     useEffect(() => {
         fetch('Recipe.json')
@@ -18,7 +20,7 @@ const Recipes = () => {
             .then(data => setrecipe(data))
     }, [])
 
-    
+
 
     function recipeClick(item) {
 
@@ -33,19 +35,30 @@ const Recipes = () => {
 
     }
 
-    function PreparingClick(preitem){
+    function PreparingClick(preitem) {
         const newpreper = [...preparing, preitem]
-            setPreparing(newpreper);
+        setPreparing(newpreper);
 
-            const remaincoocklist = coocklist.filter(ditem => ditem !==preitem )
-            setcoocklist(remaincoocklist);
+        const remaincoocklist = coocklist.filter(ditem => ditem !== preitem)
+        setcoocklist(remaincoocklist);
+
+
+        const newtime = totaltime + parseInt(preitem.preparing_time.replace('minutes', ''));
+        settotaltime(newtime);
+
+        const newcal = totalcal + parseInt(preitem.calories.replace('calories', ''));
+        settotalcal(newcal);
+
+        
     }
+   
+
 
 
 
     return (
         <div className="mt-20 w-[100%]">
-             <ToastContainer />
+            <ToastContainer />
             <h1 className="font-bold text-3xl mb-5">Our Recipes</h1>
             <p className='text-[#000000aa] px-[12%]'>Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget urna volutpat curabitur elementum mauris aenean neque.</p>
 
@@ -76,7 +89,7 @@ const Recipes = () => {
                                 </div>
                                 <button onClick={() => recipeClick(item)} className='bg-[#0BE58A] rounded-full font-bold px-4 text-sm my-[2px] w-56'>Want to Cook</button>
                             </div>
-                             
+
 
 
                         ))
@@ -96,23 +109,23 @@ const Recipes = () => {
                         </div>
                     </div>
                     <div>
-                    
-                    {
-                        coocklist.map((item, i) => (
-                            <div className="flex gap-3 text-left pl-4 bg-[#dedede4d] py-4 mt-2 pr-3">
-                            <p>{i+1}</p>
-                            <p>{item.recipe_name}</p>
-                            <p>{item.preparing_time}</p>
-                            <p>{item.calories}</p>
-                            <button onClick={() => PreparingClick(item)} className='bg-[#0BE58A] rounded-full font-bold px-4 text-sm my-[2px]'>Preparing</button>
-                        </div>
-                        
-                        ))
-                    }
-                    
+
+                        {
+                            coocklist.map((item, i) => (
+                                <div className="flex gap-3 text-left pl-4 bg-[#dedede4d] py-4 mt-2 pr-3">
+                                    <p>{i + 1}</p>
+                                    <p>{item.recipe_name}</p>
+                                    <p>{item.preparing_time}</p>
+                                    <p>{item.calories}</p>
+                                    <button onClick={() => PreparingClick(item)} className='bg-[#0BE58A] rounded-full font-bold px-4 text-sm my-[2px]'>Preparing</button>
+                                </div>
+
+                            ))
+                        }
 
 
-                        
+
+
                     </div>
 
                     <h3 className="font-bold mb-3 mt-5">Currently cooking: {preparing.length}</h3>
@@ -126,27 +139,27 @@ const Recipes = () => {
                     <div>
 
 
-                    {
-                        preparing.map((item, i) => (
-                            <div className="flex justify-between text-left pl-4 bg-[#dedede4d] py-4 pr-7 mb-3">
-                            <p>{i+1}</p>
-                            <p className="ml-[-20px]">{item.recipe_name}</p>
-                            <p>{item.preparing_time}</p>
-                            <p>{item.calories}</p>
-                        </div>
-                        ))
-                    }
-                       
+                        {
+                            preparing.map((item, i) => (
+                                <div className="flex justify-between text-left pl-4 bg-[#dedede4d] py-4 pr-7 mb-3">
+                                    <p>{i + 1}</p>
+                                    <p className="ml-[-20px]">{item.recipe_name}</p>
+                                    <p>{item.preparing_time}</p>
+                                    <p>{item.calories}</p>
+                                </div>
+                            ))
+                        }
+
                     </div>
 
                     <div className="flex justify-end hdrp p-5 gap-4 text-left">
                         <div>
                             <p>Total Time = </p>
-                            <p>45 minutes</p>
+                            <p>{totaltime} minutes</p>
                         </div>
                         <div>
                             <p>Total Calories = </p>
-                            <p>1050 calories</p>
+                            <p>{totalcal} calories</p>
                         </div>
                     </div>
                 </div>
